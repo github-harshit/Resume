@@ -1,0 +1,355 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar */
+
+#main-header{
+
+    background-image: url("../images/macbook_mouse.jpg");
+    display: block;
+    height: 65vh;
+    width: 100%;
+     opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+ 
+    
+    
+    
+/* list stylling*/
+
+}
+ nav ul{
+    text-align: center;
+ }
+nav li{
+    display: inline;
+    text-decoration:none ;
+    list-style: none;
+     padding: 10px;
+     margin: 10px
+
+}
+ nav li  a{
+    color: white;
+     text-decoration: none;
+     font-size: large;
+      transition: color 1s, border-bottom 2s;
+      
+ }
+ nav li a:hover{
+    color: rgb(201, 116, 230);
+     border-bottom:  1px solid rgb(94, 42, 111);
+ }
+  #main-header #rem-header #heading  h1{
+    
+        color: white;
+         text-align: center;
+         margin-top: 50px;
+        font-size: xx-large;
+    
+  }
+   #main-header #rem-header #icons ul{
+    text-align: center;
+   }
+    #icons li{
+        display: inline-block;
+        padding: 5px;
+    }
+   #icons li a {
+     color: white;
+      text-decoration: none;
+   
+   }
+    .social li a i{
+        padding:10px; 
+         font-size: 1.5rem;
+         border-radius: 50%;
+         transition: color 1s;
+
+        
+    }
+    .social li a i:hover{
+        box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.2);
+        color: rgba(29, 64, 179, 0.907);
+    }
+
+    /*About*/
+    #desc{
+        width: 100%;
+        position: relative;
+    }
+    #desc #myImage {
+        height: 250px;
+        width: 250px;
+        margin: auto;
+        margin-top: -100px;
+        
+        
+        
+    }
+    #desc #myImage img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: 0 px 0px;
+        border: 1px solid white;
+    }
+     #desc #about{
+        text-align: center;
+        text-align: justify;
+        margin-top: 10px;
+        width: 70%;
+        margin: auto;
+     }
+      #desc #about p{
+        text-align: center;
+        font-size:20px;
+        color: black;
+      }
+      /* Sections*/
+      /* common styling to all sections*/
+      section{
+        display: flex; 
+         flex-direction: column;
+          justify-content: center;
+        align-items: center;
+         margin: 10px;
+      }
+       section:nth-child(2n+1){
+        background-color: white;
+       }
+        section:nth-child(2n){
+            background-color: lightgray;
+        }
+        /*section:target{
+         background-color: rgb(253, 8, 8);
+        }*/
+
+        /* Skill Section*/
+        .section-heading{
+            width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+    margin-bottom: 50px;
+
+        }
+        .section-heading span {
+            font-size: 40px;
+            color: #2857a4;
+            display: inline-block;
+            padding-top: 10px;
+            margin-right: 0.5rem;
+        }
+       
+         .skill-display{
+            width: 70%; 
+            
+             height: 300px;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+               justify-content: space-between;
+               align-items: center;
+               align-content: space-evenly;
+         }
+         .skill-progress{
+            
+              
+              height: 25px;
+              width: 200px;
+           background-color: white;
+              margin: 10px;
+               
+           
+         }
+         .name{
+            color: white;
+         }
+         .indicator{
+         
+         background-color: #2857a4;
+         height: inherit;
+         }
+         /* percentage classes*/ 
+         .ninty{
+            width: 90%;
+            height: inherit;
+         }
+         .eighty{
+            width: 80%; 
+            height: inherit;
+         }
+         .seventy{
+            width: 70%;
+            height: inherit;
+         }
+         .fifty{
+            width: 50%;
+            height: inherit;
+         }
+         .fourty{
+            width: 40%;
+            height: inherit;
+         }
+
+        /*Education Section*/ 
+         .mbox{
+            width: 75%; 
+            height: 700px;
+            
+            position: relative;
+         }
+         .sbox{
+            height: 200px;
+            width: 40%;
+            position: relative; 
+            left: 5px;
+            margin: 5px;
+             
+              padding: 20px;
+         }
+         .sbox h2{
+            color: #403066;
+         }
+          .sbox h3{
+            color: #ef793e;
+          }
+         .sbox:nth-child(2n){
+            left: 55%;
+         }
+         .divider{
+            height: 75%;
+             width: 0;
+             border: 3px dashed #0096fa6b;
+              position: absolute; 
+              top: 10%;
+               left: 50%;
+         }
+         .traveller{
+            position: sticky;
+            top: 25%;
+            font-size: 26px;
+            transform: rotate(90deg);
+         }
+         
+
+
+
+         /* Contact Section*/
+         #contact .section-heading span {
+            font-size: 40px;
+            color: white;
+            display: inline-block;
+            padding-top: 10px;
+            margin-right: 0.5rem;
+        }
+         #contact{
+            background: linear-gradient(to right, #2857a4 ,#403066);
+         }
+         .parent-contact{
+            display: flex; 
+            
+         }
+         .first-half{
+            width: 50%;
+      
+         }
+         .form{
+            
+            margin: 30px ;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+          
+          
+            
+         }
+         
+         .form input{
+            display: block;
+            width: 350px;
+            height: 40px;
+            margin: 10px;
+            font-size: 20px;
+            font-weight:bold;
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            background-color: inherit;
+            border-bottom: 2px groove white;
+            
+            
+            
+         }
+         
+          .form input:focus{
+           outline: none;
+          }
+           .form button{
+              width: 150px;
+              height: 40px;
+          
+              margin-top: 20px;
+              padding: 10px;
+              text-transform: uppercase;
+              background-color: #2857a4;
+              color: white;
+              border: 1px solid white;
+              font-size: 14px;
+
+           }
+        
+         
+         .second-half{
+            width: 50%;
+          
+         }
+         .content{
+           
+             margin: 30px;
+         }
+
+         .second-half h3, p{
+           margin: 10px;
+           color: white;
+           
+         }
+         .second-half  ul{
+            list-style: none;
+            margin: 10px;
+
+         }
+         .second-half ul li span{
+            margin: 10px;
+         }
+         .second-half ul li{
+            margin-bottom: 10px;
+            color: white;
+         }
+        /* bottom icons*/
+        
+        .cul{
+         list-style: none;
+         display: flex;
+          flex-direction: row;
+        }
+        .cul li a {
+          margin: 10px;
+          text-decoration: none;
+          color: white;
+           font-size:24px; 
+         
+        }
+         .cul li a:hover{
+           
+          color: black;
+          
+         
+         }
