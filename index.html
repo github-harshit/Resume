@@ -13,11 +13,11 @@
         
   <nav id="navbar" >
     <ul>
-        <li><a href="#Home">Home</a> </li>
+        <li><a href="#home">Home</a> </li>
         <li> <a href="#desc">About</a> </li>
         <li><a href="#skills">Skills</a></li>
-        <li> <a href="Education">Education </a></li>
-        <li><a href="#Portfolio">Portfoliio</a> </li>
+        <li> <a href="education">Education </a></li>
+        <li><a href="#portfolio">Portfoliio</a> </li>
         <li><a href="#contact"> Contact</a> </li>
     </ul>
   </nav>
@@ -51,10 +51,10 @@
         <section id="skills">
           <h1 class="section-heading"> <span> <i class="fa-solid fa-chalkboard-user"></i> </span> 
             <span>Skills</span></h1>
-          <div class="skill-display">
+          <div id="skill-container" class="skill-display">
             <div class="skill-progress">
              
-              <div class="indicator ninty" >
+              <div class="indicator ninty" data-val="85" >
                <div class="name">
                 <h3>Java</h3>
               </div>
@@ -63,7 +63,7 @@
             </div>
             <div class="skill-progress">
              
-              <div class="indicator eighty">
+              <div class="indicator eighty" data-val="80">
                <div class="name">
                 <h3>DSA</h3>
               </div>
@@ -72,7 +72,7 @@
             </div>
             <div class="skill-progress">
              
-              <div class="indicator seventy">
+              <div class="indicator seventy" data-val="82">
                <div class="name">
                 <h3>Javascript</h3>
               </div>
@@ -81,7 +81,7 @@
             </div>
             <div class="skill-progress">
              
-              <div class="indicator ninty">
+              <div class="indicator ninty" data-val="90">
                <div class="name">
                 <h3>HTML</h3>
               </div>
@@ -90,7 +90,7 @@
             </div>
             <div class="skill-progress">
              
-              <div class="indicator ninty">
+              <div class="indicator ninty" data-val="85">
                <div class="name">
                 <h3>CSS</h3>
               </div>
@@ -99,7 +99,7 @@
             </div>
             <div class="skill-progress">
              
-              <div class="indicator fourty">
+              <div class="indicator fourty" data-val="45">
                <div class="name">
                 <h3>React</h3>
               </div>
@@ -108,7 +108,7 @@
             </div>
             <div class="skill-progress">
              
-              <div class="indicator fifty">
+              <div class="indicator fifty" data-val="55">
                <div class="name">
                 <h3>Android</h3>
               </div>
@@ -117,7 +117,7 @@
             </div>
             <div class="skill-progress">
              
-              <div class="indicator fifty">
+              <div class="indicator fifty" data-val="55">
                <div class="name">
                 <h3>Node</h3>
               </div>
@@ -205,6 +205,7 @@
         
 
     </main>
-    
+
+<script src="./app.js"></script>
 </body>
 </html>
