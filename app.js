@@ -86,3 +86,31 @@ function fillBars(){
       
    }
 }
+
+// Project section
+
+
+let triplets  = document.querySelectorAll(".triplet");
+
+let portfolioImages = document.querySelectorAll(".portfolio-image-container");
+
+for(let i =0;i<triplets.length; i++){
+    portfolioImages[i].addEventListener("mouseover", function () {
+      
+      triplets[i].style.visibility = "visible"; 
+
+}
+);
+
+
+
+
+   portfolioImages[i].addEventListener("mouseout", function () {
+      triplets[i].style.visibility = "hidden"; 
+   
+}
+);
+}
+
+
+// implementing animation of heading 

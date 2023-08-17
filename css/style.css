@@ -3,26 +3,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+    
+
 }
+
+
 /* navbar */
 
 #main-header{
 
-    background-image: url("../images/macbook_mouse.jpg");
+    /* background-image: url("../images/joanna-kosinska-szFUQoyvrxM-unsplash.jpg"); */
+  background-color: rgb(209 250 229);
     display: block;
-    height: 65vh;
+
+    height: 100vh;
     width: 100%;
      opacity: 0.8;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
- 
+ }
+   #navbar { 
+   padding-top: 60px;
+  
+  }
+
+  
     
     
     
 /* list stylling*/
 
-}
+
  nav ul{
     text-align: center;
  }
@@ -35,33 +49,83 @@ nav li{
 
 }
  nav li  a{
-    color: white;
+    color: black;
      text-decoration: none;
-     font-size: large;
+     font-size: 18px;
       transition: color 1s, border-bottom 2s;
+      font-weight: 500;
       
  }
  nav li a:hover{
-    color: rgb(201, 116, 230);
-     border-bottom:  1px solid rgb(94, 42, 111);
+    color: rgb(6 78 59);
+  
  }
+  /* Home Page Styling */
+  .home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+  }
+
+  
+  .content{
+    width: 60%;
+   
+   
+  }
+
+  
+ #rem-header{
+    margin-top: 100px;
+   
+    margin-right: 250px;
+   
+   
+ }
+ 
   #main-header #rem-header #heading  h1{
     
-        color: white;
+        color: black;
          text-align: center;
-         margin-top: 50px;
-        font-size: xx-large;
+         margin-top: 30px;
+         font-size: 4rem;
+         line-height: 1;
+         font-weight: 700;
+         letter-spacing: .05em;
     
   }
+  #main-header #rem-header #heading  h2{
+   font-size: 1.875rem;
+   line-height: 2.25rem;
+   
+   text-transform: capitalize;
+   letter-spacing: .025em;
+   margin-top: 1rem;
+   margin-left: 8rem;
+   color: black;
+   --tw-text-opacity: 1;
+  }
+
+
+  
+ 
    #main-header #rem-header #icons ul{
     text-align: center;
+   }
+    #icons h2 {
+       color : black; 
+       padding : 5px; 
+       text-align: center; 
+
+
    }
     #icons li{
         display: inline-block;
         padding: 5px;
     }
    #icons li a {
-     color: white;
+     color: black;
       text-decoration: none;
    
    }
@@ -78,19 +142,45 @@ nav li{
         color: rgba(29, 64, 179, 0.907);
     }
 
+    .image{
+      width: 40%;
+      margin-top: 100px;
+      height: 400px; 
+      margin-right: 150px;
+      
+       
+     
+     }
+    
+   
+ 
+     .sideImage{
+      width: 100%;
+     height: 100%;
+     object-fit: cover;
+     object-position: center;
+     }
+
     /*About*/
     #desc{
         width: 100%;
         position: relative;
+        background-color:hwb(0 96% 4%);
+      
     }
+     #desc #wrapper {
+       display: flex;
+        width:70%;
+        height: 400px;
+        
+     }
     #desc #myImage {
-        height: 250px;
-        width: 250px;
-        margin: auto;
-        margin-top: -100px;
-        
-        
-        
+        height: 300px;
+        width:30%;
+        margin: 100px 0px;
+        margin-right: 50px;
+      
+     
     }
     #desc #myImage img{
         width: 100%;
@@ -104,12 +194,25 @@ nav li{
         text-align: justify;
         margin-top: 10px;
         width: 70%;
+         height: 100%;
         margin: auto;
+    
      }
+     #desc #about h1 {
+       text-align: center;
+       font-size: 38px; 
+       font-weight: 100;
+       margin-top: 20px;
+       margin-bottom: 25px;
+     
+     }
+      
       #desc #about p{
         text-align: center;
-        font-size:20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size:24px;
         color: black;
+       text-align: justify;
       }
       /* Sections*/
       /* common styling to all sections*/
@@ -119,7 +222,14 @@ nav li{
           justify-content: center;
         align-items: center;
          margin: 10px;
+        
       }
+       #skills{
+          /* background : #707c80e9;  */
+          /* background: #6B728E; */
+      	
+         background-color: rgb(187 247 208);
+       }
        section:nth-child(2n+1){
         background-color: white;
        }
@@ -140,7 +250,7 @@ nav li{
         }
         .section-heading span {
             font-size: 40px;
-            color: #2857a4;
+            color:black; 
             display: inline-block;
             padding-top: 10px;
             margin-right: 0.5rem;
@@ -170,9 +280,18 @@ nav li{
          .name{
             color: white;
          }
+
+         .name h3 {
+             color: white;
+         }
          .indicator{
          
-         background-color: #2857a4;
+         /* background-color: #5c5484;  */
+         /* background-color: #404258; */
+         	background-color: rgb(19 78 74);
+           
+            
+
          height: inherit;
          }
          /* percentage classes*/ 
@@ -188,6 +307,11 @@ nav li{
             width: 70%;
             height: inherit;
          }
+         .sixty{
+            width: 60%;
+            height: inherit;
+             
+         }
          .fifty{
             width: 50%;
             height: inherit;
@@ -198,6 +322,12 @@ nav li{
          }
 
         /*Education Section*/ 
+
+        /* the id is project but this is education section with airplane which I ahve currently disabled in html */
+         #projects .section-heading span  {
+            color: #2C3639;
+
+         }
          .mbox{
             width: 75%; 
             height: 700px;
@@ -236,7 +366,98 @@ nav li{
             font-size: 26px;
             transform: rotate(90deg);
          }
+          /* Portfolio / Project Section */ 
+
+          #portfolio {
+             background-color:  hwb(0 96% 4%);;
+          }
+          #portfolio-container {
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0 50px;
+            margin-bottom: 2%;
+            justify-content: space-around;
+        }
+
+        .name{
+          text-align: center;
+          font-family: 'Courier New', Courier, monospace;
+          color: #403066;
+        }
+        .portfolio-image-container {
+         max-width: 300px;
+         overflow: hidden;
+         margin: 10px;
+         background-size: cover;
+         background-repeat: no-repeat;
+         position: relative;
+     } 
+          .portfolio-image-container img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .portfolio-details {
+            /* display: none; */
+            height: 100%;
+            width: 100%;
+            transition: all 0.5s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            color: transparent;
+            text-align: center;
+            padding: 10px;
+            
+        
+            /* background-color: white; */
+        }
+        
+        .portfolio-image-container:hover {
+            box-shadow: 0 0 20px #74ADC8;
+        
+        }
+        
+        
+        .portfolio-image-container:hover .portfolio-details {
+            background-color: #80808078;
+            /* display: block; */
+            color: white;
+        }
+        .triplet{
          
+       height: 100%;
+       width: 100%;
+         visibility: hidden;
+        
+       
+          
+        }
+
+        .child{
+       
+         margin-top: 100px;
+         margin-left: 15px;
+          
+        }
+        .triplet ul {
+          display: flex;
+          list-style: none;
+          flex-direction: row;
+          justify-content: center;
+
+        }
+        .triplet li a {
+          list-style: none;
+          text-decoration: none;
+          padding: 10px;
+          font-size: 22px;
+          color: black;
+        }
+
 
 
 
@@ -249,7 +470,10 @@ nav li{
             margin-right: 0.5rem;
         }
          #contact{
-            background: linear-gradient(to right, #2857a4 ,#403066);
+            /* background: #46434fdd; */
+            /* background: #404258; */
+            	background-color: rgb(15 118 110);
+               
          }
          .parent-contact{
             display: flex; 
@@ -284,9 +508,13 @@ nav li{
             border-left-style: hidden;
             background-color: inherit;
             border-bottom: 2px groove white;
+            color: white;
             
             
             
+         }
+         ::placeholder {
+             color: rgb(19 78 74);
          }
          
           .form input:focus{
@@ -299,10 +527,11 @@ nav li{
               margin-top: 20px;
               padding: 10px;
               text-transform: uppercase;
-              background-color: #2857a4;
-              color: white;
+              background-color: rgb(19 78 74);
+              color: #fff;
               border: 1px solid white;
               font-size: 14px;
+              cursor: pointer;
 
            }
         
@@ -316,29 +545,43 @@ nav li{
              margin: 30px;
          }
 
-         .second-half h3, p{
+         .second-half h3, h2{
            margin: 10px;
            color: white;
+           font-size: 26px;
            
          }
-         .second-half  ul{
-            list-style: none;
-            margin: 10px;
+         .second-half p {
+             color: white;
+             margin: 10px;
+             font-size: 24px;
+            
+         }
+         .other {
+             list-style: none;
 
          }
-         .second-half ul li span{
-            margin: 10px;
+         .other .icon{
+             width: 20px;
+             height: 20px;
+             background-size: contain;
          }
-         .second-half ul li{
-            margin-bottom: 10px;
-            color: white;
+         .other li a {
+             margin: 10px;
+             text-decoration: none;
+             color: white;
+             font-size: 22px;
+             padding-bottom: 5px;
          }
+
         /* bottom icons*/
         
         .cul{
+       
          list-style: none;
          display: flex;
           flex-direction: row;
+         
         }
         .cul li a {
           margin: 10px;

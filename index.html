@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;500;600;700&family=Roboto+Serif:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c92b5cf5c7.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,16 +19,25 @@
         <li><a href="#home">Home</a> </li>
         <li> <a href="#desc">About</a> </li>
         <li><a href="#skills">Skills</a></li>
-        <li> <a href="education">Education </a></li>
-        <li><a href="#portfolio">Portfoliio</a> </li>
+        <li> <a href="#projects">Projects  </a></li>
+      
         <li><a href="#contact"> Contact</a> </li>
     </ul>
   </nav>
-  <div id="rem-header">
+
+
+  <div class="home">
+ <div class="content">
+   <div id="rem-header">
     <div id="heading">
-       <h1> Harshit Joshi </h1>
+       <h1> Hi ! 
+       <h1>  I am Harshit  </h1>
+        <h2>  Software Developer </h2>
+       
     </div>
     <div id="icons" >
+      <br>
+     
       <ul class="social">
         <li><a href="https://www.linkedin.com/in/harshit-joshi-a2b5b2189/"> <i class="fa-brands fa-linkedin"></i></a></li>
         <li><a href="https://github.com/github-harshit"> <i class="fa-brands fa-github"></i></a></li>
@@ -34,19 +46,48 @@
       </ul>
     </div>
   </div>
+
+ </div>
+  <div class="image">
+     
+      <img class="sideImage" src="./images/Screenshot (59).png">
+   
+
+     </div>
+    
+
+</div>
+</header>
  
-    </header>
+  
     <main>
      
         <section id="desc">
-            <div id="myImage">
-               <img src=".//images/profile.jpg">
+            <div id="wrapper">
+
+              <div id="myImage">
+
+                <img src="./images/977cb987c85a_portrait.jpg">
+             </div>
+             <div id="about">
+               <h1> About Me </h1>
+                
+                       <p>
+                        Hello, I'm Harshit Joshi, a 22-year-old Computer Science Engineer. I love building websites and solving tricky problems in the world of computers. I'm all about turning creative ideas into real, working websites.
+
+Beyond web development, I enjoy tackling tough challenges in computer science. I like to dig deep into complicated problems and come up with smart solutions.
+
+My dream is to make things that really matter. I want to create stuff that can make a positive difference in the world. I'm excited to use my skills to contribute to projects that can bring about some good changes.
+                       
+                       </p>
+
+
+             </div>
+
+
             </div>
-            <div id="about">
-                <p>Hi, I'm Harshit ,a student and enthusiast of Computer Science. I like building Computer Science projects specially
-                     android and web apps for work as well as for fun. I am also a full stack developer  I'd love to combine my passion and work for building more 
-                     efficient and sustainable technology for the world.</p>
-            </div>
+
+            
         </section>
         <section id="skills">
           <h1 class="section-heading"> <span> <i class="fa-solid fa-chalkboard-user"></i> </span> 
@@ -54,9 +95,9 @@
           <div id="skill-container" class="skill-display">
             <div class="skill-progress">
              
-              <div class="indicator ninty" data-val="85" >
+              <div class="indicator eighty" data-val="80" >
                <div class="name">
-                <h3>Java</h3>
+                <h3>Javascript </h3>
               </div>
               </div>
 
@@ -65,16 +106,7 @@
              
               <div class="indicator eighty" data-val="80">
                <div class="name">
-                <h3>DSA</h3>
-              </div>
-              </div>
-
-            </div>
-            <div class="skill-progress">
-             
-              <div class="indicator seventy" data-val="82">
-               <div class="name">
-                <h3>Javascript</h3>
+                <h3 >CSS</h3>
               </div>
               </div>
 
@@ -90,16 +122,25 @@
             </div>
             <div class="skill-progress">
              
-              <div class="indicator ninty" data-val="85">
+              <div class="indicator sixty" data-val="60">
                <div class="name">
-                <h3>CSS</h3>
+                <h3>Node</h3>
               </div>
               </div>
 
             </div>
             <div class="skill-progress">
              
-              <div class="indicator fourty" data-val="45">
+              <div class="indicator sixty" data-val="60">
+               <div class="name">
+                <h3>Express</h3>
+              </div>
+              </div>
+
+            </div>
+            <div class="skill-progress">
+             
+              <div class="indicator seventy " data-val="70">
                <div class="name">
                 <h3>React</h3>
               </div>
@@ -108,18 +149,18 @@
             </div>
             <div class="skill-progress">
              
-              <div class="indicator fifty" data-val="55">
+              <div class="indicator ninty" data-val="90">
                <div class="name">
-                <h3>Android</h3>
+                <h3>Problem solving </h3>
               </div>
               </div>
 
             </div>
             <div class="skill-progress">
              
-              <div class="indicator fifty" data-val="55">
+              <div class="indicator eight" data-val="80">
                <div class="name">
-                <h3>Node</h3>
+                <h3>Java</h3>
               </div>
               </div>
 
@@ -129,8 +170,8 @@
           </div>
 
         </section>
-        <section id="education">
-           <h1 class="section-heading"> <span><i class="fa-sharp fa-solid fa-graduation-cap"></i></i></span><span>Education</span></h1>
+        <!-- <section id="projects">
+           <h1 class="section-heading"> <span><i class="fa-sharp fa-solid fa-graduation-cap"></i></i></span><span>Projects </span></h1>
           <div class="mbox">
             <div class="sbox first">
               <h2>Senior Secondary</h2>
@@ -160,17 +201,117 @@
             </div>
             
           </div>
+        </section> -->
+      <section id="portfolio">
+        <section id="projects">
+          <h1 class="section-heading"> 
+            <span><i class="fa-sharp fa-solid fa-graduation-cap"></i></i></span><span>Projects </span></h1>
+            
+            <div id="portfolio-container">
+               
+                <div class="portfolio-image-container">
+                   <h1 class="name">Unbeatable Tic Tac Toe  </h1>
+                    <img src="./images/codezen_2.png">
+                    <div class="portfolio-details">
+                     
+                      <div class  = "triplet">
+
+                        <div class="child">
+                          <ul>
+                            <li><a  target="_blank" href="https://github.com/github-harshit/TicTacToe"> Github</a></li>
+                            <li><a target="_blank" href="https://tictactoeworld.netlify.app/"> Project</a></li>
+                            <li><a href="#"> PPT</a></li>
+                          </ul>
+
+                        </div>
+                       
+                        
+
+                      </div>
+                        
+                    </div>
+
+                </div>
+                
+                
+                <div class="portfolio-image-container">
+                   <h1  class="name"> Memories </h1>
+                    <img src="./images/project_3.png">
+                    <div class="portfolio-details">
+                     
+                        <div class  = "triplet">
+
+                          <div class="child">
+                            <ul>
+                              <li><a target="_blank" href="https://github.com/github-harshit/Project-Memories"> Github</a></li>
+                              <li><a target="_blank" href=" https://memories-app-project-123.netlify.app/"> Project</a></li>
+                              <li><a href="#"> PPT</a></li>
+                            </ul>
+
+                          </div>
+                       
+
+                      </div>
+                    </div>
+
+                </div>
+                <div class="portfolio-image-container">
+                  <h1 class="name">Chatting application </h1>
+                    <img src="./images/codezen.png">
+                    <div class="portfolio-details">
+                     
+                       <div class  = "triplet">
+
+                         <div class="child">
+                          <ul>
+                            <li><a href="#"> Repo</a></li>
+                            <li><a href="#"> Project</a></li>
+                            <li><a href="#"> PPT</a></li>
+                          </ul>
+
+                         </div>
+                        
+
+                      </div>
+                    </div>
+
+                </div>
+                <div class="portfolio-image-container">
+                    <img src="./images/tree.jpeg">
+                    <div class="portfolio-details">
+                      <h1> Project Mayhem </h1>
+                       <div class  = "triplet">
+                         <div class="child">
+                          <ul>
+                            <li><a href="#"> Repo</a></li>
+                            <li><a href="#"> Project</a></li>
+                            <li><a href="#"> PPT</a></li>
+                          </ul>
+
+                         </div>
+                        
+
+                      </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
-        <section id="portfolio"></section>
         <section id="contact">
            <h1 class="section-heading"><span><i class="fa-regular fa-address-card"></i> </span><span>Contact</span></h1></div>
            <div class="parent-contact">
           <div class="first-half">
             <div class="form">
-            <input id="name" name="name" type="text" placeholder="Your Name">
-           <input id="email" name="email" type="email" placeholder="Your email">
-           <input id="msg" name="msg" type="text" placeholder="Your Message">
-           <button type="submit">Send</button>
+
+              <form action="https://formsubmit.co/harshitjoshi250@gmail.com" method="POST">
+                <input id="name" name="name" type="text" placeholder="Your Name">
+                <input id="email" name="email" type="email" placeholder="Your email">
+                <input id="msg" name="msg" type="text" placeholder="Your Message">
+                <button type="submit">Send</button>
+              </form>
+          
 
             </div>
            
@@ -179,15 +320,20 @@
           </div>
           <div class="second-half">
             <div class="content">
-            <h3> Get in touch</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dicta facilis eligendi fugiat optio suscipit quibusdam alias quasi repellat consequuntur.</p> 
-            <h3>My Address</h3>
-            <ul>
-              <li><span><i class="fa-solid fa-location-dot"></i></span>Delhi, India</li>
-              <li><span><i class="fa-solid fa-mobile-retro"></i></span>9887729868</li>
-              <li><span><i class="fa-regular fa-envelope"></i></span>harshitjoshi250@gmail.com</li>
+            <h3> Connect with  me </h3>
+            <p>  Feel free to drop me a message whenever you have some awesome projects in mind. I'm always excited and ready to work on new and exciting ventures. Don't hesitate to reach out to me!</p> 
+           
+            <h2> Other places where you can find me </h2>
+            <ul class="other">
+              <li><a href="https://leetcode.com/harshitjoshi250/"><img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/free-leetcode-3521542-2944960.png?f=webp"> Leetcode </a></li>
+              <li> <a href="https://auth.geeksforgeeks.org/user/harshitjoshi250/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user">
+                <img  class = "icon" src= "data:image/png;base64,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"> GeeksForGeeks</a></li>
+              <li> <a href= "https://www.chess.com/member/anarchist007"> <img class="icon" src= "data:image/jpeg;base64,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">Chees.com </a></li>
             </ul>
           </div>
+          
+            
+          
           </div>
           </div>
 
